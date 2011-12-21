@@ -1,0 +1,136 @@
+body {
+	font:;
+	font-color: brown;
+	background-image: url(./images/sand2.jpg);	
+	background: repeat;
+}
+
+a:link {
+	text-decoration: none;
+	color: brown;
+}
+
+
+#page {
+
+}
+
+#brandbanner {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	padding: 10px;
+}
+
+#brandleft {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100px;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+
+#brandrighttop {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 50px;
+	padding-left: 25px;
+	padding: 25px;
+}
+
+#brandrightbottom {
+	position: absolute;
+	top: 50;
+	right: 0;
+	padding-right: 25px;
+	height: 30px;
+}
+
+#pagecontent {
+	position: relative;
+	width: 900px;
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	-moz-box-shadow: 0 0 30px 5px gray;
+	-webkit-box-shadow: 0 0 30px 5px gray;
+	width: relative;
+}
+			
+#largepic {
+	position: absolute;
+	top: 0;
+	height: 400px;
+	z-index: 400;
+}
+
+#largepictext {
+	position: absolute;
+	top: 300px;
+	width: 900px;
+	height: 50px;
+	background-color: white;
+	color: black;
+	margin: 5px;
+	z-index: 500;
+}
+
+#minilinks1 {
+	position: absolute;
+	top: 500;
+}
+			
+#minilinks1, #minilinks2, #minilinks3 {
+	position: relative;
+	float: left;
+	height: 200px;
+	width: 200px;
+	background-color: white;
+	padding: 25px;
+	border: 2px;
+	border-color: blue;
+	z-index: 500;
+}
+
+.columnbb {
+	position: relative;
+	float: left;
+	width: 280px;
+	height: 150px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border-right: 1px brown dashed;
+}
+
+.column {
+	position: top;
+	width: 280px;
+	height: 150px;
+	margin-right: 5px;
+	margin-left: 5px;
+	float: left;
+} 
+
+#infobarbottom {
+	position: absolute;
+	top: 600px;
+	background-color: beige;
+}
+
+ul.banner, {
+	list-style-type: none;
+	display: inline;
+	padding: 8px;
+}
+
+
+ul, li {
+	list-style:none;
+}
