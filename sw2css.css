@@ -1,8 +1,13 @@
 body {
 	font:;
 	font-color: brown;
-	background-image: url(./images/sand2.jpg);	
+/*	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+	background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);*/
+	background-image: url('../images/sand2.jpg');	
 	background: repeat;
+
 }
 
 a:link {
@@ -35,20 +40,21 @@ a:link {
 }
 
 #brandrighttop {
+	font-size: .6em;
 	position: absolute;
 	top: 0;
 	right: 0;
 	height: 50px;
-	padding-left: 25px;
-	padding: 25px;
+	padding-right: 25px;
 }
 
 #brandrightbottom {
+	display: block;
 	position: absolute;
-	top: 50;
+	top: 50px;
 	right: 0;
-	padding-right: 25px;
-	height: 30px;
+	padding-right: 500px;
+	height: 50px;
 }
 
 #pagecontent {
@@ -59,43 +65,47 @@ a:link {
 	margin-left: auto;
 	margin-bottom: 25px;
 	margin-top: 10px;
-	-moz-box-shadow: 0 0 30px 5px gray;
-	-webkit-box-shadow: 0 0 30px 5px gray;
-	width: relative;
 }
 			
 #largepic {
 	position: absolute;
 	top: 0;
-	height: 400px;
+	height: 450px;
 	z-index: 400;
+	-moz-box-shadow: 0 0 30px 5px gray;
+	-webkit-box-shadow: 0 0 30px 5px gray;
 }
 
 #largepictext {
 	position: absolute;
-	top: 300px;
-	width: 900px;
-	height: 50px;
+	top: 285px;
+	width: 870px;
+	height: 30px;
 	background-color: white;
+	opacity: 0.8;
 	color: black;
-	margin: 5px;
+	margin: 0px;
 	z-index: 500;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
 }
 
-#minilinks1 {
+#minilinks {
 	position: absolute;
-	top: 500;
+	top: 365px;
+	margin-left: 35px;
 }
 			
 #minilinks1, #minilinks2, #minilinks3 {
 	position: relative;
 	float: left;
-	height: 200px;
+	height: 150px;
 	width: 200px;
+	margin-left: 20px;
 	background-color: white;
-	padding: 25px;
-	border: 2px;
-	border-color: blue;
+	padding: 15px;
+	border: solid 2px blue;
 	z-index: 500;
 }
 
@@ -110,27 +120,24 @@ a:link {
 }
 
 .column {
-	position: top;
+	position: relative;
+	float: left;
 	width: 280px;
 	height: 150px;
 	margin-right: 5px;
 	margin-left: 5px;
-	float: left;
 } 
 
 #infobarbottom {
 	position: absolute;
 	top: 600px;
+	margin-bottom: 25px;
 	background-color: beige;
-}
-
-ul.banner, {
-	list-style-type: none;
-	display: inline;
-	padding: 8px;
 }
 
 
 ul, li {
-	list-style:none;
+	list-style: none;
+	display: inline;
+	padding: 8px;
 }
