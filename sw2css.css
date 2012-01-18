@@ -1,10 +1,5 @@
 body {
-	background-image: url ('./images/brick.jpg');
-	        -webkit-background-size: cover;
-	        -moz-background-size: cover;
-	        -o-background-size: cover;
-	        background-size: cover;
-	
+	background-image: url ('./images/texture.jpg');
 	margin: 0px;
 
 }
@@ -63,7 +58,8 @@ a:link {
 
 #mainmenu {
 	display: block;
-	background-color: #8FBC8F;
+	background-color: black;
+	opacity: 0.8;
 	font-size: 1.5em;
 	color: white;
 	padding: 10px;
@@ -95,7 +91,7 @@ a:link {
 	-webkit-box-shadow: 0 0 30px 5px gray;*/
 }
 
-#largepictext {
+/*#largepictext {
 	position: absolute;
 	text-align: center;
 	top: 355px;
@@ -109,7 +105,7 @@ a:link {
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-top: 10px;
-}
+}*/
 
 #minilinks {
 	position: absolute;
