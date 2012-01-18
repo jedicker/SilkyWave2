@@ -1,7 +1,16 @@
 body {
-	background-color: #EEF3E2;
+	background-image: url ('./images/brick.jpg');
+	        -webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+	        background-size: cover;
+	
 	margin: 0px;
 
+}
+
+h3 {
+	text-align: center;
 }
 
 a:link {
@@ -15,6 +24,7 @@ a:link {
 		height: 5px;
 		width: 100%;
 		margin-top: 5px;
+		margin-bottom: 5px;
 		z-index: 400;
 }
 
@@ -31,6 +41,7 @@ a:link {
 	height: 100px;
 	background-color: white;
 	padding: 0px;
+	border-bottom: 1px black;
 }
 
 #brandleft {
@@ -54,17 +65,18 @@ a:link {
 	display: block;
 	background-color: #8FBC8F;
 	font-size: 1.5em;
-	font: white;
-	padding-right: 500px;
+	color: white;
 	padding: 10px;
 	text-align: center;
 }
 
 #pagecontent {
 	position: top;
+	margin-top: 10px;
+	margin-bottom: 25px;
 	width: 900px;
-	height: 700px;
-	background-color: white;
+	height: 660px;
+	background-color: beige;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 25px;
@@ -79,14 +91,14 @@ a:link {
 	height: 300px;
 	padding-top: 0px;
 	z-index: 400;
-	-moz-box-shadow: 0 0 30px 5px gray;
-	-webkit-box-shadow: 0 0 30px 5px gray;
+/*	-moz-box-shadow: 0 0 30px 5px gray;
+	-webkit-box-shadow: 0 0 30px 5px gray;*/
 }
 
 #largepictext {
 	position: absolute;
 	text-align: center;
-	top: 300px;
+	top: 355px;
 	width: 870px;
 	height: 30px;
 	background-color: white;
@@ -101,7 +113,7 @@ a:link {
 
 #minilinks {
 	position: absolute;
-	top: 375px;
+	top: 425px;
 	margin-left: 35px;
 }
 			
@@ -140,9 +152,8 @@ a:link {
 
 #infobarbottom {
 	position: absolute;
-	top: 500px;
-	margin-bottom: 25px;
-	background-color: beige;
+	top: 630px;
+	background-color: white;
 }
 
 
@@ -153,7 +164,7 @@ ul, li {
 }
 
 .connectbar li {
-	border-right: 1px dashed green;
+	font: green;
 	list-style: none;
 	display: inline;
 	padding: 8px;
@@ -164,7 +175,6 @@ ul, li {
 }
 
 img.roundedmini {
-	height: 40px;
 	padding: 5px;
 	float: left;
 	-moz-border-radius: 5px;
