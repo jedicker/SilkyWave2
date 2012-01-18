@@ -1,23 +1,28 @@
 body {
-	font:;
-	font-color: brown;
-/*	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
-	background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-	background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-	background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);*/
-	background-image: url('../images/sand2.jpg');	
-	background: repeat;
+	background-color: #EEF3E2;
+	margin: 0px;
 
 }
 
 a:link {
 	text-decoration: none;
-	color: brown;
+	color: #8FBC8F;
 }
 
 
-#page {
+#pagetop {
+		background-image: url('./images/sand2.jpg');
+		height: 5px;
+		width: 100%;
+		margin-top: 5px;
+		z-index: 400;
+}
 
+#pagebottom {
+		position: relative;
+		background-image: url('./images/sand2.jpg');
+		height: 5px;
+		width: 900px;
 }
 
 #brandbanner {
@@ -25,22 +30,19 @@ a:link {
 	width: 100%;
 	height: 100px;
 	background-color: white;
-	padding: 10px;
+	padding: 0px;
 }
 
 #brandleft {
 	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100px;
-	width: 100px;
-	padding-left: 25px;
-	padding-right: 25px;
-	
+	top: -5px;
+	left: -5px;
+	z-index: 300;
 }
 
 #brandrighttop {
 	font-size: .6em;
+	display: inline;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -48,29 +50,34 @@ a:link {
 	padding-right: 25px;
 }
 
-#brandrightbottom {
+#mainmenu {
 	display: block;
-	position: absolute;
-	top: 50px;
-	right: 0;
+	background-color: #8FBC8F;
+	font-size: 1.5em;
+	font: white;
 	padding-right: 500px;
-	height: 50px;
+	padding: 10px;
+	text-align: center;
 }
 
 #pagecontent {
-	position: relative;
+	position: top;
 	width: 900px;
+	height: 700px;
 	background-color: white;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 25px;
-	margin-top: 10px;
+	-moz-box-shadow: 0 0 30px 5px gray;
+	-webkit-box-shadow: 0 0 30px 5px gray;
+	z-index: 300;
 }
 			
 #largepic {
 	position: absolute;
-	top: 0;
-	height: 450px;
+	top: 150px;
+	height: 300px;
+	padding-top: 0px;
 	z-index: 400;
 	-moz-box-shadow: 0 0 30px 5px gray;
 	-webkit-box-shadow: 0 0 30px 5px gray;
@@ -78,7 +85,8 @@ a:link {
 
 #largepictext {
 	position: absolute;
-	top: 285px;
+	text-align: center;
+	top: 300px;
 	width: 870px;
 	height: 30px;
 	background-color: white;
@@ -93,7 +101,7 @@ a:link {
 
 #minilinks {
 	position: absolute;
-	top: 365px;
+	top: 375px;
 	margin-left: 35px;
 }
 			
@@ -105,7 +113,9 @@ a:link {
 	margin-left: 20px;
 	background-color: white;
 	padding: 15px;
-	border: solid 2px blue;
+	border: 1px black;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	z-index: 500;
 }
 
@@ -116,7 +126,7 @@ a:link {
 	height: 150px;
 	margin-right: 5px;
 	margin-left: 5px;
-	border-right: 1px brown dashed;
+	border-right: 1px #8FBC8F dashed;
 }
 
 .column {
@@ -130,7 +140,7 @@ a:link {
 
 #infobarbottom {
 	position: absolute;
-	top: 600px;
+	top: 500px;
 	margin-bottom: 25px;
 	background-color: beige;
 }
@@ -138,6 +148,26 @@ a:link {
 
 ul, li {
 	list-style: none;
+	padding: 8px;
+	
+}
+
+.connectbar li {
+	border-right: 1px dashed green;
+	list-style: none;
 	display: inline;
 	padding: 8px;
+}
+
+.leftli li {
+	border-left: 1px dashed green;
+}
+
+img.roundedmini {
+	height: 40px;
+	padding: 5px;
+	float: left;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
 }
